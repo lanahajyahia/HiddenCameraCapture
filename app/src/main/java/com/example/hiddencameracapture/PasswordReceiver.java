@@ -42,7 +42,7 @@ public class PasswordReceiver extends DeviceAdminReceiver {
 //        Toast.makeText(ctxt, R.string.password_failed, Toast.LENGTH_LONG)
 //                .show();
         CameraManager mgr = new CameraManager(ctxt);
-        mgr.dispatchTakePictureIntent();
+        mgr.takePhoto();
         Toast.makeText(ctxt,"Photo saved to Pictures\\iSelfie",Toast.LENGTH_SHORT).show();
 
     }

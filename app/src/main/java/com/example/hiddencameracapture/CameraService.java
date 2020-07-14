@@ -33,9 +33,9 @@ public class CameraService extends Service {
 
         receiver = new PasswordReceiver();
         IntentFilter filter = new IntentFilter();
-//        filter.addAction(Intent.ACTION_USER_PRESENT);
-//        filter.addAction(Intent.ACTION_SCREEN_OFF);
-//        filter.addAction(Intent.ACTION_SCREEN_ON);
+        filter.addAction(Intent.ACTION_USER_PRESENT);
+        filter.addAction(Intent.ACTION_SCREEN_OFF);
+        filter.addAction(Intent.ACTION_SCREEN_ON);
         registerReceiver(receiver, filter);
     }
 }
